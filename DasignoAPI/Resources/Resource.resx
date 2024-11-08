@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DatabaseInstall" xml:space="preserve">
+    <value>USE @BaseDatosImplementacion
+GO
+
+CREATE TABLE [dbo].[Usuario](
+ [IdUsuario] [varchar](50) NULL,
+ [PrimerNombre] [varchar](50) NULL,
+ [SegundoNombre] [varchar](50) NULL,
+ [PrimerApellido] [varchar](50) NULL,
+ [SegundoApellido] [varchar](50) NULL,
+ [FechaNacimiento] [datetime] NULL,
+ [Sueldo] [decimal](18, 2) NULL,
+ [FechaCreacion] [datetime] NULL,
+ [FechaModificacion] [datetime] NULL
+) ON [PRIMARY]
+GO
+
+CREATE PROCEDURE [dbo].[DasEliminarUsuario]
+@IdUsuario VARCHAR(50),
+@Status BIT OUTPUT,
+@Mensaje VARCHAR(200) OUTPUT
+AS
+BEGIN
+BEGIN TRY
+DELETE FROM Usuario
+WHERE IdUsuario = @IdUsuario
+set @Mensaje = 'Usuario eliminado exitosamente' 
+SET @Status = 0
+SELECT 1
+END TRY
+ BEGIN CATCH
+  SET @Mensaje = 'Ha ocurrido un error en la creacion de usuario'
+  SET @Status = 0
+  SELECT 0
+ END CATCH
+END
+GO
+
+CREATE PROCEDURE [dbo].[DasInsertarUsuario]
+@PrimerNombre VARCHAR(50),
+@SegundoNombre VARCHAR(50),
+@PrimerApellido VARCHAR(50),
+@SegundoApellido VARCHAR(50),
+@FechaNacimiento DATETIME,
+@Sueldo DECIMAL(18,2),
+@Status BIT OUTPUT,
+@Mensaje VARCHAR(200) OUTPUT,
+@IdUsuario VARCHAR(50) OUTPUT
+AS
+BEGIN
+BEGIN TRY
+DECLARE @ValorIdUsuario VARCHAR(50)
+SET @ValorIdUsuario = NEWID()
+
+INSERT INTO Usuario(
+IdUsuario,
+PrimerNombre,
+SegundoNombre,
+PrimerApellido,
+SegundoApellido,
+FechaNacimiento,
+Sueldo,
+FechaCreacion,
+FechaModificacion
+)
+VALUES(
+@ValorIdUsuario,
+@PrimerNombre,
+@SegundoNombre,
+@PrimerApellido,
+@SegundoApellido,
+@FechaNacimiento,
+@Sueldo,
+GETDATE(),
+GETDATE()
+)
+
+set @IdUsuario = @ValorIdUsuario
+set @Mensaje = 'Usuario Ingresado exitosamente'
+SET @Status = 0
+SELECT 1
+END TRY
+ BEGIN CATCH
+  SET @Mensaje = 'Ha ocurrido un error en la creacion de usuario'
+  SET @Status = 0
+  SELECT 0
+ END CATCH
+
+END
+
+--DROP PROCEDURE DasInsertarUsuario
+GO
+
+CREATE PROCEDURE [dbo].[DasModificarUsuario]
+@FechaNacimiento DATETIME,
+@IdUsuarioModif VARCHAR(50),
+@PrimerApellido VARCHAR(50),
+@PrimerNombre VARCHAR(50),
+@SegundoApellido VARCHAR(50),
+@SegundoNombre VARCHAR(50),
+@Sueldo DECIMAL(18,2),
+@Status BIT OUTPUT,
+@Mensaje VARCHAR(200) OUTPUT,
+@IdUsuario VARCHAR(50) OUTPUT
+AS
+BEGIN
+BEGIN TRY
+UPDATE Usuario SET
+FechaModificacion = GETDATE(),
+FechaNacimiento = @FechaNacimiento,
+PrimerApellido = @PrimerApellido,
+PrimerNombre = @PrimerNombre,
+SegundoApellido = @SegundoApellido,
+SegundoNombre = @SegundoNombre,
+Sueldo = @Sueldo
+WHERE IdUsuario = @IdUsuarioModif
+
+set @IdUsuario = @IdUsuarioModif
+set @Mensaje = 'Usuario modificado exitosamente'
+SET @Status = 1
+SELECT 1
+END TRY
+ BEGIN CATCH
+  SET @Mensaje = 'Ha ocurrido un error en la modificacion de usuario'
+  SET @Status = 0
+  SELECT 0
+ END CATCH
+
+END
+GO
+
+CREATE PROCEDURE [dbo].[DasSeleccionarUsuarioPorId]
+@IdUsuario VARCHAR(50),
+@Status BIT OUTPUT,
+@Mensaje VARCHAR(200) OUTPUT
+AS
+BEGIN
+BEGIN TRY
+SELECT * FROM Usuario WHERE IdUsuario = @IdUsuario
+set @Mensaje = 'Usuario seleccionado exitosamente' 
+SET @Status = 0
+END TRY
+BEGIN CATCH
+set @Mensaje = 'No se pudo seleccionar correctamente el usuario' 
+SET @Status = 0
+END CATCH
+
+END
+GO
+
+CREATE PROCEDURE [dbo].[DasSeleccionarUsuarioPorPrimerNombrePrimerApellido]
+@PrimerNombre VARCHAR(50),
+@PrimerApellido VARCHAR(50),
+@PageNumber int,
+@PageSize int,
+@Mensaje VARCHAR(200) OUTPUT,
+@Status BIT OUTPUT
+AS
+BEGIN
+BEGIN TRY
+ select * from Usuario where PrimerNombre like '%' + @PrimerNombre + '%' or PrimerApellido like '%' + @PrimerApellido + '%'
+ ORDER BY IdUsuario
+ OFFSET (@PageNumber - 1) * @PageSize ROWS
+    FETCH NEXT @PageSize ROWS ONLY
+ set @Mensaje = 'Consulta realizada exitosamente'
+ SET @Status = 1
+END TRY
+BEGIN CATCH
+ set @Mensaje = 'Hubo problemas al realizar la consulta'
+ SET @Status = 0
+END CATCH
+END
+GO</value>
+  </data>
+  <data name="DatabaseCreation" xml:space="preserve">
+    <value>USE master
+                                              
+CREATE DATABASE @BaseDatosImplementacion
+</value>
+  </data>
+  <data name="TableCreation" xml:space="preserve">
+    <value>USE [@BaseDatosImplementacion]
+
+
+CREATE TABLE [dbo].[Usuario](
+ [IdUsuario] [varchar](50) NULL,
+ [PrimerNombre] [varchar](50) NULL,
+ [SegundoNombre] [varchar](50) NULL,
+ [PrimerApellido] [varchar](50) NULL,
+ [SegundoApellido] [varchar](50) NULL,
+ [FechaNacimiento] [datetime] NULL,
+ [Sueldo] [decimal](18, 2) NULL,
+ [FechaCreacion] [datetime] NULL,
+ [FechaModificacion] [datetime] NULL
+) ON [PRIMARY]</value>
+  </data>
+  <data name="CreateProcedureEliminarUsuario" xml:space="preserve">
+    <value>CREATE PROCEDURE  [dbo].[DasEliminarUsuario]
+@IdUsuario VARCHAR(50),
+@Status BIT OUTPUT,
+@Mensaje VARCHAR(200) OUTPUT
+AS
+BEGIN
+BEGIN TRY
+DELETE FROM Usuario
+WHERE IdUsuario = @IdUsuario
+set @Mensaje = 'Usuario eliminado exitosamente' 
+SET @Status = 0
+SELECT 1
+END TRY
+ BEGIN CATCH
+  SET @Mensaje = 'Ha ocurrido un error en la creacion de usuario'
+  SET @Status = 0
+  SELECT 0
+ END CATCH
+END</value>
+  </data>
+  <data name="CreateProcedureInsertarUsuario" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[DasInsertarUsuario]
+@PrimerNombre VARCHAR(50),
+@SegundoNombre VARCHAR(50),
+@PrimerApellido VARCHAR(50),
+@SegundoApellido VARCHAR(50),
+@FechaNacimiento DATETIME,
+@Sueldo DECIMAL(18,2),
+@Status BIT OUTPUT,
+@Mensaje VARCHAR(200) OUTPUT,
+@IdUsuario VARCHAR(50) OUTPUT
+AS
+BEGIN
+BEGIN TRY
+DECLARE @ValorIdUsuario VARCHAR(50)
+SET @ValorIdUsuario = NEWID()
+
+INSERT INTO Usuario(
+IdUsuario,
+PrimerNombre,
+SegundoNombre,
+PrimerApellido,
+SegundoApellido,
+FechaNacimiento,
+Sueldo,
+FechaCreacion,
+FechaModificacion
+)
+VALUES(
+@ValorIdUsuario,
+@PrimerNombre,
+@SegundoNombre,
+@PrimerApellido,
+@SegundoApellido,
+@FechaNacimiento,
+@Sueldo,
+GETDATE(),
+GETDATE()
+)
+
+set @IdUsuario = @ValorIdUsuario
+set @Mensaje = 'Usuario Ingresado exitosamente'
+SET @Status = 0
+SELECT 1
+END TRY
+ BEGIN CATCH
+  SET @Mensaje = 'Ha ocurrido un error en la creacion de usuario'
+  SET @Status = 0
+  SELECT 0
+ END CATCH
+
+END</value>
+  </data>
+  <data name="CreateProcedureModificarUsuario" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[DasModificarUsuario]
+@FechaNacimiento DATETIME,
+@IdUsuarioModif VARCHAR(50),
+@PrimerApellido VARCHAR(50),
+@PrimerNombre VARCHAR(50),
+@SegundoApellido VARCHAR(50),
+@SegundoNombre VARCHAR(50),
+@Sueldo DECIMAL(18,2),
+@Status BIT OUTPUT,
+@Mensaje VARCHAR(200) OUTPUT,
+@IdUsuario VARCHAR(50) OUTPUT
+AS
+BEGIN
+BEGIN TRY
+UPDATE Usuario SET
+FechaModificacion = GETDATE(),
+FechaNacimiento = @FechaNacimiento,
+PrimerApellido = @PrimerApellido,
+PrimerNombre = @PrimerNombre,
+SegundoApellido = @SegundoApellido,
+SegundoNombre = @SegundoNombre,
+Sueldo = @Sueldo
+WHERE IdUsuario = @IdUsuarioModif
+set @IdUsuario = @IdUsuarioModif
+set @Mensaje = 'Usuario modificado exitosamente'
+SET @Status = 1
+SELECT 1
+END TRY
+ BEGIN CATCH
+  SET @Mensaje = 'Ha ocurrido un error en la modificacion de usuario'
+  SET @Status = 0
+  SELECT 0
+ END CATCH
+
+END
+
+</value>
+    <comment>
+
+</comment>
+  </data>
+  <data name="CreateProcedureSeleccionarUsuarioPorId" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[DasSeleccionarUsuarioPorId]
+@IdUsuario VARCHAR(50),
+@Status BIT OUTPUT,
+@Mensaje VARCHAR(200) OUTPUT
+AS
+BEGIN
+BEGIN TRY
+SELECT * FROM Usuario WHERE IdUsuario = @IdUsuario
+set @Mensaje = 'Usuario seleccionado exitosamente' 
+SET @Status = 0
+END TRY
+BEGIN CATCH
+set @Mensaje = 'No se pudo seleccionar correctamente el usuario' 
+SET @Status = 0
+END CATCH
+
+END</value>
+  </data>
+  <data name="CreateProcedureSeleccionarUsuarioPorPrimerNombreApellido" xml:space="preserve">
+    <value>CREATE PROCEDURE [dbo].[DasSeleccionarUsuarioPorPrimerNombrePrimerApellido]
+@PrimerNombre VARCHAR(50),
+@PrimerApellido VARCHAR(50),
+@PageNumber int,
+@PageSize int,
+@Mensaje VARCHAR(200) OUTPUT,
+@Status BIT OUTPUT
+AS
+BEGIN
+BEGIN TRY
+ select * from Usuario where PrimerNombre like '%' + @PrimerNombre + '%' or PrimerApellido like '%' + @PrimerApellido + '%'
+ ORDER BY IdUsuario
+ OFFSET (@PageNumber - 1) * @PageSize ROWS
+    FETCH NEXT @PageSize ROWS ONLY
+ set @Mensaje = 'Consulta realizada exitosamente'
+ SET @Status = 1
+END TRY
+BEGIN CATCH
+ set @Mensaje = 'Hubo problemas al realizar la consulta'
+ SET @Status = 0
+END CATCH
+END</value>
+  </data>
+</root>
